@@ -1,0 +1,201 @@
+#
+# Borland C++ IDE generated makefile
+#
+.AUTODEPEND
+
+BC45PATH = D:\BC45
+
+#
+# Borland C++ tools
+#
+IMPLIB  = $(BC45PATH)\bin\Implib
+BCCDOS  = $(BC45PATH)\bin\Bcc +BccDos.cfg -3 -O2 -d
+TLINK   = $(BC45PATH)\bin\TLink
+TLIB    = $(BC45PATH)\bin\TLib
+TASM    = Tasm
+#
+# IDE macros
+#
+
+
+#
+# Options
+#
+IDE_LFLAGSDOS =  -L$(BC45PATH)\LIB
+IDE_BFLAGS = 
+LLATDOS_compozerdexe =  -c -Tde -L$(BC45PATH)\LIB -C
+RLATDOS_compozerdexe = 
+BLATDOS_compozerdexe = 
+CNIEAT_compozerdexe = -I$(BC45PATH)\INCLUDE -D
+LNIEAT_compozerdexe = -s
+LEAT_compozerdexe = $(LLATDOS_compozerdexe)
+REAT_compozerdexe = $(RLATDOS_compozerdexe)
+BEAT_compozerdexe = $(BLATDOS_compozerdexe)
+
+#
+# Dependency List
+#
+
+all : compozer #clean
+
+Dep_compozer = \
+   compozer.exe
+
+compozer : BccDos.cfg $(Dep_compozer)
+  echo MakeNode
+
+clean : ..\compozer.exe
+        del compozer.map
+        del compozer.csm
+        del bccdos.cfg
+        del *.obj
+
+..\compozer.exe : install
+        echo MakeNode
+
+install : compozer
+        move compozer.exe ..
+
+Dep_compozerdexe = \
+   data.obj\
+   keys.obj\
+   gr.obj\
+   fm.obj\
+   midifile.obj\
+   ems.obj\
+   fonts.obj\
+   findnote.obj\
+   getfile.obj\
+   playback.obj\
+   function.obj\
+   main.obj
+
+compozer.exe : $(Dep_compozerdexe)
+  $(TLINK)   @&&|
+ /v $(IDE_LFLAGSDOS) $(LEAT_compozerdexe) $(LNIEAT_compozerdexe) +
+$(BC45PATH)\LIB\c0h.obj+
+data.obj+
+keys.obj+
+gr.obj+
+fm.obj+
+midifile.obj+
+ems.obj+
+fonts.obj+
+findnote.obj+
+getfile.obj+
+playback.obj+
+function.obj+
+main.obj
+$<,$*
+$(BC45PATH)\LIB\ch.lib
+
+|
+
+Dep_datadobj = \
+   notes.h\
+   rests.h\
+   bars.h\
+   accident.h\
+   instrum.h\
+   clefs.h
+
+data.obj : $(Dep_datadobj)
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -odata.obj data.c
+|
+
+fonts.obj : fonts.c
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -ofonts.obj fonts.c
+|
+
+keys.obj :  keys.c
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -okeys.obj keys.c
+|
+
+gr.obj :  gr.c
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -ogr.obj gr.c
+|
+
+fm.obj :  fm.c
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -ofm.obj fm.c
+|
+
+midifile.obj :  midifile.c
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -omidifile.obj midifile.c
+|
+
+ems.obj :  ems.c
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -oems.obj ems.c
+|
+
+findnote.obj :  findnote.c
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -ofindnote.obj findnote.c
+|
+
+getfile.obj :  getfile.c
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -ogetfile.obj getfile.c
+|
+
+playback.obj :  playback.c
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -oplayback.obj playback.c
+|
+
+Dep_compozerdobj = \
+   data.h\
+   keys.h\
+   ems.h\
+   fm.h\
+   gr.h
+
+function.obj : $(Dep_compozerdobj)
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -ofunction.obj function.c
+|
+
+main.obj : $(Dep_compozerdobj)
+  $(BCCDOS) -P- -c @&&|
+ $(CEAT_compozerdexe) $(CNIEAT_compozerdexe) -omain.obj main.c
+|
+
+# Compiler configuration file
+BccDos.cfg : 
+   Copy &&|
+-W-
+-R
+-v
+-vi
+-H
+-H=compozer.csm
+-mhuge
+-f-
+-C
+-y
+-4
+-a
+-h
+-Og
+-Ot
+-O-a
+-Z
+-O
+-Ol
+-Ob
+-Om
+-Op
+-Oi
+-Ov
+-w-ucp
+-wamb
+-wasm
+| BccDos.cfg
+
+

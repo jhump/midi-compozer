@@ -1,0 +1,850 @@
+
+                              MIDI Compozer v1.23
+                              -------------------
+                              Copyright (c) 2000
+                             -Apriori Enterprises-
+                              All Rights Reserved
+                        
+                             User's Documentation
+
+
+Table of Contents:
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+
+MIDI Compozer v1.23 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 1.0.0
+
+About the Program ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 2.0.0
+
+Getting Started ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 3.0.0
+        Hardware and Software Requirements ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 3.1.0
+        Starting the Program ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 3.2.0
+
+Using the Program ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.0.0
+        The Menus ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.1.0
+                File Menu ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.1.1
+                Edit Menu ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.1.2
+                Playback Menu ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.1.3
+                Song Menu ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.1.4
+                Options Menu ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.1.5
+                Miscellaneous Menu ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.1.6
+                Help Menu ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.1.7
+        Hot Keys ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.2.0
+        Entering Music ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.3.0
+                Notes and Rests ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.3.1
+                Accidentals ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.3.2
+                Dynamics ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.3.3
+                Tempos and Time Signatures ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.3.4
+                Bars ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.3.5
+                Other Voice Information ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.3.6
+                Other Things ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.3.7
+        Navigating the File Browser ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.4.0
+        Instrument Selector and Percussion List ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.5.0
+        Playing Music ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 4.6.0
+
+Closing Notes ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 5.0
+
+Words from the Author (Programmer) ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 6.0
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Section ù 1.0.0
+
+MIDI Compozer v1.23
+şşşşşşşşşşşşşşşşşşş
+
+        This program is the probably the most useful product created thus
+far by Apriori Enterprises. It is a full featured composition program that
+reads and writes a proprietary notation file format and can export songs
+to the standard MIDI format. It supports up to 10 note polyphony (this
+limit was created to allow playback on FM synth sound cards and to
+conserve memory and keep the saved file size small). Four of these voices
+can be set to be percussive voices.
+        More detail will be given in the sections following, but suffice
+it to say for now, this program is a commercial-level product which we are
+distributing as shareware (despite the fact that we could be making a lot
+of money given proper marketing with this software).
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Section ù 2.0.0
+
+About the Program:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        This product allows you to create music compositions based around
+the General MIDI standard. Some limits on that are instruments (currently
+General MIDI only supports 128 different instruments plus several other
+sounds via the "drum set" percussion). Other limits are polyphony : only
+ten simultaneous notes can be played - and on a synthesizer card (vs.
+General MIDI card), the tenth one can only be heard during playback if its
+a percussive voice. There exist other limits but for the most part this
+software is full-featured in both music editing and music playback. It is
+a Composer program, not an Editor program, so it will NOT read existing
+MIDI files for changing. It only reads a special file format which
+preserves the visual format of the music onscreen. The program can
+interpret this data to MIDI format, but not vice versa.
+        This product is intended for persons who compose music in their
+spare time. If you compose professionally, this software can still suit
+you, but you can probably afford expensive software with even more
+features (that may be important for the process in which you write music).
+        Some key shortcomings to point out are that this program does not
+have a mouse interface (keyboard only) nor can it interface with a MIDI
+keyboard plugged into a MIDI port for recording purposes (for similar
+reasons as to why the program does not import MIDI files), and it can not
+print music to a printer (sorry).
+        If you have any questions about the product, you can contact the
+author (moi) at the following via E-Mail:
+                                        
+                                        gt2832b@prism.gatech.edu
+
+You can also send for a catalog of other Apriori products, order
+registered versions of some products, or just throw questions at me about
+any of our products including any bugs you may have found.
+        This program is shareware. It's actually freeware because you have
+the entire program, I don't ask that you stop using it after 30 days, I
+don't require any sort of registration fee, etc... Just use it, and if you
+like what you see, remember the name Apriori Enterprises and look for
+other stuff from us in the future.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Section ù 3.0.0
+
+Getting Started:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        The following section briefly (and hopefully adequately) tells you
+what you'll need to run this program and how to run it.
+
+
+3.1.0 - Hardware and Software Requirements
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        The program requires a 386 or higher processor to run. However,
+the software has not been tested on such a slow machine - it may run too
+slowly, and the music may play back with improper rhythm due to the time
+the CPU takes to process the music. It has been tested on 486 50Mhz
+machines and faster and runs fine.
+        The only thing that is REQUIRED for running the program is a
+video display that is VESA 1.2 compatible and capable of 640x480
+resolution with 256 colors. This is the video mode the program runs in.
+        In addition to this, you need EMS active. If you are running the
+program under Windows 95 or another such OS which supplies EMS services
+you should be ok (and if you are not, you can set your MS-DOS prompt PIF
+file so that you are). Otherwise, you will need QEMM or EMM386 or another
+memory manager installed that supports EMS. The memory manager must also
+be setup to provide EMS (this setup depends on which memory manager you
+are using, but in general is setup in the C:\CONFIG.SYS startup file).
+        In order to playback the music, an Adlib compatible sound card is
+required. This means that your sound card must have a Yamaha OPL/2
+compatible synthesizer chip addressed at I/O Port 388 (hex). Nearly ALL
+sound cards will have this (all Creative Labs Sound Blaster compatible
+cards and cards compatible with later model sound blasters [like the Pro,
+or the Sound Blaster 16 or Sound Blaster AWE32 or AWE64] should meet this
+requirement). If your sound card meets this requirement, it most likely
+meets the requirement for stereo playback, too (stereo playback requires
+a Yamaha OPL/3 compatible synthesizer chip - Sound Blaster Pros and other
+later sound blasters and compatibles meet this requirement). The best
+playback of all is a Roland MPU-401 compatible MIDI card addressed at I/O
+Port 330 (hex). Most sound cards that say General MIDI compatible meet
+this requirement.
+        Unfortunately, if you have an MPU-401 compatible card that does
+NOT have a Yamaha OPL/2 compatible chip then you will not be able to
+playback music within the program (because the OPL/2 is what MIDI Compozer
+will try to detect; if you do not have that, it assumes there is no proper
+sound hardware at all).
+        If you have an OPL/2 compatible sound card, then the program can
+playback the music in mono. To access an OPL/3 compatible (for stereo
+playback) or an MPU-401 compatible (for MIDI playback - usually
+wavetable), you must set certain flags within the program.
+
+
+3.2.0 - Starting the Program
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        To start the program, simply make the directory you want the
+program to reside in (for example - MD C:\COMPOZER) and copy all the files
+into that directory. The only files required for the program to run are
+COMPOZER.EXE, GENMIDI.IBK, and DRUMS.IBK. The files KEYS.LST and this
+file, COMPOZER.DOC, are for online help, and the remaining files (*.AEM)
+are sample music files.
+        When you've copied the program into the target directory (you
+could just type - COPY A:\*.* C:\COMPOZER - if you were installing from a
+floppy drive for instance), change to that directory (by typing -
+CD C:\COMPOZER). When you are in the proper directory, type COMPOZER to
+get started. At this time you will see (provided you have the proper video
+hardware and EMS support) the opening screen. If the program has detected
+the proper sound hardware, you should hear a short musical sequence
+(synchronized with the display for effect).
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Section ù 4.0.0
+
+Using the Program:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        When the program starts and the opening screen is displayed, there
+will be a message saying press any key. After doing so, you are placed in
+the program. In the program you are presented with staves of music and a
+cursor. At the top you will see the main menu titles, and below that you
+will see an information bar (which tells you the current voice and note
+pitch, the current page, and the current column where the cursor is).
+        To access the menus, press <Alt> by itself or <F10> (see below in
+section 4.1.0 for more information).
+        You can also execute a menu option without accessing the menus by
+pressing the appropriate hot key combination (see section 4.2.0 below for
+more information).
+        Other things you can do at this point are enter music using the
+cursor and certain keys (see section 4.3.0 for the keys to entering music)
+or selecting music using the cursor for Edit operations (see section 4.1.2
+for more information on the Edit operations).
+        To move the cursor you can use the arrow keys (which move the
+cursor a single column at a time), the home and end keys (which move the
+cursor all the way to the beginning or end of a page). If you hold down
+the <Ctrl> key and press the right or left arrow keys, the cursor will tab
+over to the next or previous column in which the current ("active") voice
+contains an item. The <Tab> key will tab the cursor over to the next
+column that is not blank (the next column where any voice has an item),
+and <Ctrl> plus <Tab> goes back to the previous non-blank column. To move
+the cursor to the very first column of music (first column on the first
+page) or the very last column, use <Ctrl> plus the home and end keys.
+        To change the current page, press either the <PageDown> or
+<PageUp> key (down goes to the next page, and up goes to the previous
+page). If you page down to a new page of music, the key signature will
+automatically be placed at the beginning of the music for you. To change
+pages to the very first or very last page of music, use <Ctrl> plus the
+<PageUp> or <PageDown> keys.
+        To change the active voice (which defaults to voice one), press
+the <Alt> key plus a number key (not on the numeric keypad but the numbers
+above the alphabet keys). The number you press in combination with <Alt>
+is the voice number which will be active (pressing <Alt>+<0> selects voice
+10 as the current voice).
+        To select music (for Edit operations), press the <Shift> key plus
+the right or left arrow keys, the home key, or the end key. This will
+anchor the current cursor position as one end of the selected area, and
+you press the arrow keys (plus <Shift>, otherwise you abort the selection
+and just move the cursor) to select the other end. The selection is
+limited to what is on the screen (so the selection area cannot cross page
+boundaries). In selection, you may observe that the information bar at the
+top has different information: it no longer tells you the page number, but
+it now has a 'Mark Begin' (which tells you the column of the left-most
+side of the selection), a 'Mark End' (which has the number of the right-
+most column in the selection), and 'Voices' which at first simply has a
+single highlighted voice number (which will be the active voice). By
+pressing <Shift> plus a number (corresponding to the voice numbers) you
+can add or remove voice numbers from that list. You cannot however remove
+the highlighted number (which is the active voice). You can change the
+current voice (the same way as when not selecting: <Alt> plus a number)
+and it will add that voice to the list (and highlight it) and keep the old
+highlighted voice as well. The voices in the list are the voices whose
+data will be copied, pasted, etc... If only a single voice is in the list,
+you can copy from the one voice and then paste to another voice. More on
+this will be explained below in section 4.1.2.
+
+
+4.1.0 - The Menus
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        To access the menus, you can simply press <Alt> or <F10>. From
+there you can use the left and right arrow keys to select which menu item
+you want to select from. To select an item, either press the down or up
+arrow keys or the <Enter> key. This will open the list of sub-menu options
+for the highlighted menu option.
+        A shortcut to opening sub-menu lists is to press and hold down the
+<Alt> key and press the key corresponding to the underlined letter of the
+menu option. Thus, pressing <Alt>+<F> would automatically open the File
+Menu and show its sub-menu options.
+        To select a sub-menu option from there, you can use the up and
+down arrow keys and then press <Enter> to select one.
+        To cancel the selection, press <Escape> once (which will close the
+sub-menu list and allow you to select another menu option) and then again
+(which will de-highlight the menu bar at the top and return you to the
+normal state of the program where you can enter music or select music for
+edit).
+
+
+4.1.1 - File Menu
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        There are six sub-menu options under the File menu:
+    NEW-
+        This creates a new piece of music (discarding the existing piece).
+If there are any unsaved changes in the current piece, it will ask if you
+want to save it. A 'Yes' will automatically save the piece (which will
+open the File Browser for selecting a name if the piece has not been given
+a filename already), a 'No' will discard the current piece without saving,
+and a 'Cancel' will abort the NEW option.
+    OPEN-
+        This opens a piece of music (discarding the existing piece). If
+there are any unsaved changes in the current piece, it will ask if you
+want to save it (just as when doing NEW above). It will then open the File
+Browser for selecting a file to open (see section 4.4.0 below for more
+information on using the File Browser to select a filename).
+    SAVE-
+        This saves the current piece of music. If the file has not been
+given a filename yet (i.e. never been saved before), then the File Browser
+will open for you to select a name (see section 4.4.0 for more info on the
+File Browser).
+    SAVE AS-
+        This opens the File Browser for you to select a name to save the
+file as. If you select an existing filename, it will ask if you want to
+overwrite the existing file. A 'Yes' will overwrite the file, and a 'No'
+or 'Cancel' will abort the SAVE AS option.
+    EXPORT MIDI-
+        This opens the File Browser for you to select a name for the MIDI
+file to create. If you select an existing filename, it will confirm your
+decision before overwriting it (just as in the SAVE AS option above).
+    EXIT-
+        This option exits the program and returns to the DOS prompt. If
+there are any unsaved changes to the current piece of music, you will be
+asked if you want to save them (just like doing NEW or OPEN above).
+
+
+4.1.2 - Edit Menu
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        There are six sub-menu options under the Edit menu:
+    UNDO-
+        This option undoes any of the below five edit options except a
+COPY (it will only undo the deletion for a CUT; the cut area will remain
+in the clipboard). It only goes one level deep, so if you cannot undo the
+last two things you did (the first UNDO will undo only the last option you
+performed; the second UNDO will undo the undo... a redo in other words).
+    CUT-
+        This option will copy the selected music into the clipboard, and
+then delete it from the page. An UNDO will undo the deletion but not the
+copying.
+    COPY-
+        This option will copy the selected music into the clipboard.
+    PASTE-
+        This option pastes the contents of the clipboard onto the current
+page at the current position of the cursor column, overwriting the music
+already there. The paste will not cross page boundaries, so if there is
+not enough space between the cursor and the end of the page for all the
+music, only what fits on the page will be pasted. If an area is selected
+and the PASTE is done, then only enough music to fill the selected area
+will be copied to the page (so if the selected area is shorter than the
+selected area copied beforehand, then only the beginning of the music is
+pasted so that only the selected area is overwritten). If only a single
+voice was selected on the copy beforehand, then that data will be pasted
+to the current voice (so you can copy from one voice and paste to another).
+However, if more than one voice was copied, those same voices will be
+pasted to (regardless of the active voice).
+    CLEAR-
+        This option deletes the selected music.
+    TRANSPOSE-
+        This option will transpose the selected music. It will open a
+window with transposition settings. If 'Transpose Accidentals' is not
+flagged then all accidentals will be left untouched. The 'Each Step is'
+field should be self-explanatory as well as the 'Number of Steps' field.
+The 'Overwrite Key Signature' option will preserve the intervals in the
+melody if it can. It may not be able to do this if there is no room for
+the program to add an accidental before a note (if it has to), in which
+case it will select the closest pitch it can.
+
+
+4.1.3 - Playback Menu
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        There are four sub-menu options under the Playback menu:
+    PLAYBACK-
+        If you have appropriate hardware (or more importantly, if the
+program detects your hardware), then this will cause the current piece to
+be played from beginning to end. If the program is set to update playback
+music (which it is by default), you will see onscreen which notes are
+played as they are sounded and the keyboard at the bottom of the screen
+will show you which notes are sounded at a time. For more information on
+controlling the playback of music (pertinent to ALL these options), see
+section 4.6.0 below.
+    PLAY SCREEN-
+        This option will play the piece from the beginning of the current
+page to the end of the current page (it may go back a page if it finds an
+end repeat, dal segno, da capo, etc... but will stop when it hits the end
+of the current page).
+    PLAY FROM SCREEN-
+        This option plays the piece of music from the beginning of the
+currently displayed page to the end of the entire piece.
+    PLAY FROM POSITION-
+        This option plays the piece of music from the current column of
+the currently displayed page to the end of the entire piece. If the cursor
+is over a column where some voices sound (or rest) and others don't then
+this may cause some of the voices to be played out of rhythm or out of
+time (this is tricky to explain but playing around with the program should
+enlighten you).
+
+
+4.1.4 - Song Menu
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        There are four sub-menu options under the Song menu:
+    DEFAULT TEMPO-
+        This option sets the default tempo (it starts with a quarter note
+as the beat and 120 beats per minute) and allows you to change it from
+there.
+    DEFAULT TIME SIG-
+        This option sets the default time signature. It starts off as
+standard time (represented by a 'C'). If you alter the denominator from
+there you can change it from cut-time (a 'C' with a vertical slash through
+it) back to standard time. If you alter the numerator you will get a more
+common numeric time signature (which allows you to set both the numerator
+and the denominator values).
+    STAFF SETUP-
+        This option allows you to setup the staves. You can change which
+clef each stave is as well as change its position on the display. If the
+offset is positive, then the staff is pushed down by that many pixels. If it
+is negative, it is pushed up by that many pixels. All the clefs are
+available but the most common are available with the keys 'F' (Bass clef),
+'G' (Treble clef), and 'C' (Alto clef).
+    VOICE SETUP-
+        This option allows you to control which voice is displayed on
+which staff. There are up to eight staves available (and whatever voice is
+on the highest number staff determines the number of staves displayed). If
+a voice has an asterisk (*) next to it, it means that voice will start off
+as muted during playback. It can be unmuted by toggling the audible voices
+like normal (see section 4.6.0 below). To toggle whether a voice should be
+muted in this manner or not, press the space key.
+
+
+4.1.5 - Options Menu
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        There are four sub-menu options under the Options menu:
+    CHANGE COLORS-
+        This option allows you to customize the colors of the interface.
+    USE YMF262/OPL3-
+        If this option is set (it is off by default just in case you don't
+have the proper hardware) the program will drive your sound card as an
+OPL/3 (versus OPL/2) which allows stereo playback.
+    USE MPU-401 GENERAL MIDI-
+        If this option is set (it is off by default since many computers
+don't have this hardware) the program will drive your sound card as a
+General MIDI card (allowing for both stereo playback and usually Wave-
+Table sounds instead of FM-synth). Neither this option nor the above one
+will do anything, unless the progam detected at the least an OPL/2 in your
+machine.
+    UPDATE PLAYBACK MUSIC-
+        This option (on by default) will cause the display screen to be
+updated as music is played back so that played notes are highlighted on
+the screen. This causes in most computers a brief pause in the playback
+when the program redraws the music from screen to screen - so if this
+pause is annoying or bothersome, turning this option off will fix it.
+    UPDATE PLAYBACK KEYBOARD-
+        This option causes the keyboard at the bottom of the screen to be
+updated as the music is played back (on by default).
+
+
+4.1.6 - Miscellaneous Menu
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        There are three sub-menu options under the Miscellaneous menu:
+    REDRAW SCREEN-
+        This will redraw the music (sometimes when editing music, or
+selecting music, the program will fail to redraw certain items on the page
+and it may look messy or confusing). The screen will be refreshed.
+    FILE INFORMATION-
+        This option brings up a box for you to enter in the name of the
+song, the name of the composer/writer, and a brief description
+(unfortunately VERY brief - 12 letter maximum). This data is printed at
+the top and bottom of the page on page one of the music. It also lists the
+filename for the piece and the number of pages (including blank pages if
+you've pressed page down to a new page without adding to it).
+    PERCUSSION LIST-
+        This option brings up a list of all of the percussion timbres and
+the pitches therein (the type of sound a percussion voice uses is
+determined by its pitch - not by setting an instrument for it). This will
+show you a brief (8 letters long) abbreviation (hopefully descriptive
+enough for you to know what it is) of the sound name and the pitch that it
+is associated with. More detail of this is covered below in section 4.5.0.
+
+
+4.1.7 - Help Menu
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        There are three sub-menu options under the Help menu:
+    VIEW HELP-
+        This option allows you to browse this file online. It will
+display an error if this file cannot be found.
+    KEYSTROKE LIST-
+        This option browses another file (KEYS.LST) which has a brief
+summary of all the keyboard commands for entering music.
+    ABOUT-
+        This simply brings up a small window with some brief information
+about the program.
+
+
+4.2.0 - Hot Keys
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        When navigating the menu, you will notice that there is at least
+one (at most two) hot keys for every menu option. Pressing this key
+combination will activate a menu item without having to use the arrow keys
+and such to find it in the menus. The hot keys are presented below:
+FILE :                              ³  SONG:
+   NEW =                    CTRL-N  ³     DEFAULT TEMPO =            ALT-T
+   OPEN =              F3   CTRL-O  ³     DEFAULT TIME SIG =    CTRL-ALT-T
+   SAVE =              F2   CTRL-S  ³     STAFF SETUP =       F5     ALT-A
+   SAVE AS =                CTRL-A  ³     VOICE SETUP =       F6     ALT-V
+   EXPORT MIDI =            CTRL-E  ³  OPTIONS:
+   EXIT =           ALT-X   CTRL-Q  ³     CHANGE COLORS =     F4     ALT-C
+EDIT:                               ³     USE YMF262/OPL3 =          ALT-Y
+   UNDO =                   CTRL-Z  ³     USE MPU-401 GENERAL MIDI = ALT-G
+   CUT =        SHIFT-DEL   CTRL-X  ³     UPDATE PLAYBACK MUSIC =    ALT-U
+   COPY =        CTRL-INS   CTRL-C  ³     UPDATE PLAYBACK KEYBOARD = ALT-K
+   PASTE =      SHIFT-INS   CTRL-V  ³  MISCELLANEOUS:
+   CLEAR =        BKSPACE      DEL  ³     REDRAW SCREEN =           CTRL-R
+   TRANSPOSE =              CTRL-T  ³     FILE INFORMATION =        CTRL-F
+PLAYBACK:                           ³     PERCUSSION VOICES =       CTRL-L
+   PLAYBACK =               CTRL-P  ³  HELP:
+   PLAY SCREEN =        CTRL-ALT-S  ³     VIEW HELP =         F1    CTRL-H
+   PLAY FROM SCREEN = CTRL-SHIFT-S  ³     KEYSTROKE LIST =          CTRL-K
+   PLAY FROM POSITION = CTRL-ALT-P  ³     ABOUT =                 SHIFT-F1
+
+
+4.3.0 - Entering Music
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        This section covers all the keys for entering in music. The
+individual sections below cover certain types of items to enter, but a few
+keys work whatever is on the screen, and they'll be discussed right now.
+The <Insert> key will insert a blank column at the current cursor column.
+Music to the right of the column will be pushed one column further right.
+This will not work when the right most column has music in it (because the
+items cannot be pushed across page boundaries). The <Delete> key will
+delete the item for the current voice at the current cursor location. If
+there is nothing there, but the column is blank (no other voices have
+music in that column), then the entire column will be deleted (so music to
+the right of the cursor will be brought back one column to the left).
+Last of all, the up and down arrow keys will move ANY item on screen up
+or down except bars (because their position is fixed on the staves).
+
+
+4.3.1 - Notes and Rests
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        To enter a note press the space key (the duration of the note will
+be either the duration of the previous note in the music or if it is the
+first note it will be a quarter note). This enters the note in the current
+column for the current voice. Pressing space again will turn the note into
+a rest (and space again reverts it to a note).
+        Another way to enter a note is to press '1' (for a whole note),
+'2' (for a half note), '3' (for a 32nd note), '4' (for a quarter note),
+'6' (for a 16th note), '7' (for a 64th note), or '8' (for an eighth note).
+These also change an existing note to the specified durations. Pressing
+the key again will change the note to be dotted (and pressing it again
+reverts it to normal duration).
+        Pressing the 't' key over an existing note will cause it to be a
+triplet note (notated by the 3 over the notehead), and pressing it again
+will revert it back.
+        The '.' key (dot or period) will make an existing note stocatto
+and pressing it again will toggle the note back to normal.
+        The '>' key (shift + period) will make a note accented (and
+another keypress toggles the note back to normal).
+        The '+' key (keypad plus or shift + equals) will cause an eighth
+note or higher (shorter duration) to have its flags connected to the
+previous note via beams.
+        The '-' key (minus, hyphen, or dash) will cause a note to be
+tied to the previous note.
+        Pressing the 'y' key will change the direction of a note's stem
+(from up to down or from down to up).
+        The 'u' key will hide a note's flags (so it isn't as confusing if
+one voice is harmonizing another). Pressing it again will unhide flags.
+        The 'U' key (shift + u) will cause the head of the note to be
+displayed backwards (or toggle it back to normal).
+        The '(' key (shift + 9) will add a fermata. It must be added to a
+column just BEFORE the note it will effect. When you add it, you are asked
+for the time to hold the note (as a percentage of the notes normal
+duration).
+        To change the pitch of any note, use the up and down arrow keys.
+        You will notice that the pitch of the current note (without octave
+information) is displayed in the info bar at the top next to the voice
+number (for voices seven through ten the percussion sound is displayed in
+the info bar in parentheses next to the pitch). This information is updated
+when you add, delete, or change the pitch of any note.
+
+
+4.3.2 - Accidentals
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        To enter an accidental, press the 'h' key (to add a sharp), or the
+'n' key (to add a natural), or the 'b' key (to add a flat). For sharps and
+flats, pressing the 'h' or 'b' key (respectively) will toggle it to a
+double-sharp or double-flat and back again.
+        To make a key signature, you must add the accidentals (to any
+voice) and then press the 'k' key over each one (one you press the key,
+the accidental will appear on every staff).
+        With the exception of making an accidental a key signature, an
+accidental will only effect notes for the voice it was entered. So if you
+add a sharp for voice one, that same note played by voice two will NOT be
+sharp unless you add an accidental for that voice too.
+        The up and down arrow keys change the pitch of accidentals.
+
+
+4.3.3 - Dynamics
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        To add a dynamics indication, use the 'f' key (for forte), the 'm'
+key (for mezzoforte), or the 'p' key (for piano). If you press 'f' again
+over a forte, it will change to fforte, then to fortissimo, and then back
+to forte again. Pressing 'm' over a mezzoforte will change it to
+'mezzopiano' and then back again. The 'p' key pressed over a piano cycles
+it to ppiano, to pianissimo, back to piano.
+        The '>' key will add a dimmenuendo (or decrescendo). You will be
+asked for the rate of change of the volume here (if you specify 50% per
+beat, then a 75% volume voice would be only 25% volume after a single
+beat [as specified by the tempo, not the time signature]). The default
+values are usually suitable. A dimmenuendo will continue to get more and
+more quiet until another dynamics indication or volume setting is found
+or until the voice is at 0% volume.
+        The '<' key will add a crescendo (just like a dimmenuendo except
+that the voice grows louder with time and will stop when it reaches a
+dynamics indication or volume setting or when the voice's volume reaches
+100%).
+
+
+4.3.4 - Tempos and Time Signatures
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        Pressing the '#' key (shift + 3) will add a time signature. Time
+signatures effect all voices (not just the current voice). A window will
+come up asking you the time signature to add. You change it in the same
+way that you change the default time signature (see section 4.1.4 above).
+        Pressing the 'o' key will add a tempo. Tempos effect all voices,
+not just the current one (as do accelerandos and ritardandos below). You
+adjust the tempo to add the same way as changing the default tempo (see
+section 4.1.4 above).
+        The 'a' key adds an accelerando and the 'r' key adds a ritardando.
+You will be asked the rate at which the tempo is changing. If you tell it
+20 bpm / measure, then if the tempo is 120bpm at the beginning of a
+measure, at the end it will be 100bpm (ritardando) or 140bpm (accelerando)
+and will continue to slow down or speed up until another tempo value is
+run into or when the tempo reaches 1 bpm or 512 bpm.
+
+
+4.3.5 - Bars
+ÄÄÄÄÄÄÄÄÄÄÄÄ
+        The <Enter> key will add a bar. Bars effect all voices (not just
+the current one). Pressing <Enter> more will cause the type of the bar to
+changing cycling to 'Double Bar', to 'End Section (Bold Double Bar)', to
+'End Repeat', to 'Begin Section (Bold Double Bar)', to 'Begin Repeat', and
+then back to 'Single Bar'.
+        You can change the number of endings for an 'End Repeat' type bar
+by pressing the '+' or '-' keys with the cursor over the bar (pressing '+'
+once will cause it to say '2x' but this does not mean that otherwise it
+only plays once [without repeating] - it still plays twice but without the
+visual '2x').
+        You can add an ending with the 'v' key. To change which ending it
+represents, press the number keys ('0' means the 10th ending, 'a' means
+the 11th ending, 'b' means the 12th ending, 'c' means the 13th ending, 'd'
+means the 14th ending, 'e' means the 15th ending, and 'f' means the 16th
+ending) to toggle an ending on or off. So to add an ending which gets
+played on the 1st, 5th, 9th, and 13th times a repeat goes through, then
+press the 'v' key (the 1st ending is already there so we don't need to add
+or remove it), then the '5' key to add the 5th ending, the '9' key to add
+the 9th ending, and then the 'c' key to add the 13th ending all in the
+same column.
+
+
+4.3.6 - Other Voice Information
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        Other voice information includes instrument changes (from the
+default of Acoustic Grand Piano), volume levels, pan levels, stereo fades,
+keyboard pans, pitch wheel settings, and pitch wheel rolls.
+        To change instruments press the 'i' key and select an instrument
+(more information on this is found below in section 4.5.0).
+        To add a volume level, press the 'L' (shift + l) key (select the
+volume from 0 to 100%).
+        To add a pan level, press the 'P' (shift + p) key (select the pan
+from -100% [all the way left] to 100% [all the way right] where 0% is
+center).
+        To add a stereo fade, press the 'S' (shift + s) key (select the
+rate of change from -100% per beat to 100%). The rate works like so: if a
+voice is centered (default pan level), then a stereo fade of -25% per beat
+is added, then after four beats (determined from tempo not time signature)
+the voice will be panned all the way left at 100%. If it started at -50%
+and the stereo fade were set at 50% per beat, then after one beat the
+voice would be centered (at 0%), and after two beats it would be at 50%.
+The fade continues until either another pan level is set or until it
+reaches either -100% (all left) or +100% (all right).
+        To add a keyboard pan, press the 'K' (shift + k) key. The keyboard
+pan works like playing a piano: high notes will be heard panned to the
+right, low ones to the left. When adding a keyboard pan, you first select
+the tone center (which pitch will be panned perfectly center). Then you
+select a range in half-steps. The default is 24 (2 octaves). This means
+that a note 2 octaves (or greater) higher than the tone center will be
+panned all the way right and notes 2 octaves lower will be panned left.
+        To add a pitch wheel position setting, press the 'w' key. You will
+then select which position to set it at (-100% means the pitch is bent two
+half steps down, 100% means the pitch is bent two half steps up).
+        Another cool feature is the wheel roll. This allows you to specify
+the pitch wheel be rolled over a period of time. To enter this, press the
+'W' (shift + w) key. You then enter the speed of the wheel rolling (-100%
+per beat means that in one beat of music, the pitch is bent two half steps
+and 100% means it is bent two half steps up). After this you enter the
+distance to roll the wheel. Here, 100% is the span of the entire wheel
+(which goes from -100% to 100% for a total of four half steps). So 50%
+tells the program to roll the pitch up two half steps and 25% indicates a
+bend of only a single half step. The pitch bend (wheel roll) will cease
+when the pitch wheel has been rolled the specified distance or either
+extreme (-100% or 100%) is reached.
+
+
+4.3.7 - Other Things
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        The remaining items all effect all voices (not just the current
+one).
+        To enter a Da Capo (D.C.) press the 'd' key. Pressing it again
+will change it to a Dal Segno (D.S.) and back.
+        To enter a Segno symbol, press the 's' key.
+        To enter a Coda symbol (one is needed where the jump is from and
+at the beginning of the Coda section where the jump is to), press the 'c'
+key.
+        To enter a Fine symbol, press the 'F' (shift + f) key.
+        To enter the descriptive text "al Coda" or "al Fine" (usually
+written after a D.S. or D.C.) then press the 'l' key (it will enter an
+"al Coda" and pressing it again will toggle to "al Fine" and back).
+NOTE: These strings are ignored during playback - the program knows if its
+to go until a Coda or Fine depending on which one it encounters first.
+These items are for visual presentation only.
+        In order to use percussion (drum set and sound effects) in your
+music, you must tell the program to use percussion by pressing the 'u'
+key. If at a later point in the music, you want to use melodic voices
+again, you can press the 'U' (shift+u) key. These will enter markers in
+the music for using percussion or not. When using percussion, voices 7
+through 10 act as the percussive voices (so you can have up to four
+percussive tones at the same time). When not using percussion (default),
+they are like normal melodic voices (the same as voices 1 through 6). To
+enter a particular percussion sound, place a note on the staff and you can
+reference the info bar (at the top of the screen beneath the menu) to see
+what percussive tone it is (for voices 7 through 10, the corresponding
+percussive tone is displayed in parenthesis next to the note value). You
+can use the Percussion List (see section 4.5.0 below) to see what note
+values correspond to what percussive sounds also.
+
+
+4.4.0 - Navigating the File Browser
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        Whenever you do an OPEN, SAVE AS (and sometimes SAVE), or EXPORT
+MIDI, the program will open a window in the screen with the File Browser
+for you to select a file.
+        For the OPEN command, typing a filename will highlight the
+filename in the current directory that is closest to it in alphabetical
+order (but not after it). Hitting <ENTER> over a filename will open that
+file, hitting it over a directory (directories say "[dir]" to the right of
+the name) will open a list of files and sub-directories in that sub-
+directory. For the most part, this is a very easy-to-use way to select a
+file.
+        The Browser hides the extension of all files and only shows you
+files that have a .AEM extension (the extension for the Apriori Enterprises
+Music Notation file).
+        For SAVE AS (and SAVE) and EXPORT MIDI the process is somewhat
+different. You can select a filename in the Browser window and press
+<Enter> to save over the existing file, or you can type in a filename. The
+program will not let you type in any invalid file characters (for DOS - so
+some characters allowed in Windows 95 are not allowed in this program). It
+also will not let you type in more than 8 characters (back to the DOS
+limit). You may notice that typing in the filename causes the filename
+that is closest to what you've typed to be highlighted in the window. If
+you hit <Enter> the program will save the file as what you've typed so far,
+NOT the filename that is highlighted, unless you've typed nothing in the
+name (and just used arrow keys to select a filename). The .AEM extension is
+automatically appended to the file when you save it, and the .MID extension
+is automatically appended to exported MIDI filenames. If you type in the
+beginning of a filename and want to save the file as the highlighted name
+(not the fragment of the name you've typed so far) hit the <Tab> key.
+        The File Browser will begin everytime in the current directory
+(which should be the directory that MIDI Compozer is installed in) on the
+current drive. To open from, save to, or export MIDI files to a different
+drive, press the <Ctrl> key plus the target drive letter; so pressing
+<Ctrl>+<E> will go to your E: drive.
+        In case you are not already aware of this, the ".." directory will
+take you to the previous directory (so hitting <Enter> over the ".."
+directory while in C:\COMPOZER\ will list the files and directories that
+are in C:\).
+        If there are no sub-directories and no .AEM extension files on a
+drive (in a sub-directory there is always at least ".."), then the window
+will say "NO FILES FOUND". If you try to change to an invalid drive letter
+the program will tell you that it's an invalid disk drive (this includes
+pressing <Ctrl>+<A> with no diskette in the floppy drive). Because of a
+bizarre quirk of DOS in single floppy systems, pressing <Ctrl>+<B> will
+cause a message to be printed (by DOS) to insert a disk, and when you
+press a key to continue, your A: drive will be known as B: by DOS. So if
+you try <Ctrl>+<A> after that, DOS will give you another message after
+which point, the floppy is again referenced as A: (do not worry if any
+of this paragraph is over your head... it's not really important - but
+can be a source of some confusion for some).
+
+
+4.5.0 - Instrument Selector and Percussion List
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        The Instrument Selector (get to by pressing 'i' to add an
+instrument change for a voice) and the Percussion List (<Ctrl>+<L>) are
+similar but not quite the same. The instruments are divided into sixteen
+different banks of eight instruments each, whereas the percussion is just
+a list of 47 percussive timbres.
+        In both windows, pressing the up and down arrow keys will change
+the highlighted entry (for instruments, it will wrap around after you get
+to the bottom or top, staying in the same bank). For instruments you can
+press the <PageUp> and <PageDown> keys to change banks (these keys will
+scroll down a window-full at a time in the percussion list).
+        If you have the proper sound hardware, then in both windows you
+can press the <Space> key to hear that voice (the percussion list just
+plays the sample voice once, whereas the instrument selector will play a
+short sequence of notes).
+        Pressing <Escape> in both windows will return to the music entry.
+Hitting <Enter> in the instrument selector will add an instrument change
+to your music for the current voice at the current cursor position,
+whereas in the percussion list hitting <Enter> simply returns to the music
+entry (just like <Escape>). This is because the Percussion List is simply
+there as reference to what notes equal what type of sounds for the voices
+six through ten (when percussion is being used, see section 4.3.7 above).
+
+
+4.6.0 - Playing Music
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        When playing back music, if the Update Playback Music is checked
+(see section 4.1.5 above) then the screen will show you what is being
+played back as it goes, otherwise it only lists the current voices that
+are being played back (by default all ten) and the current page in the
+music that playback is on.
+        To pause playback you can press the 'P' key. Any other key will
+continue the music playing.
+        To end the music short (before it finishes), you can press the
+<Escape> key.
+        To change the voices that are being played back there are a few
+things you can do: Press any one of <Alt>, <Ctrl>, or <Shift> plus the
+number corresponding to the voice you want to change (where the zero key
+will effect voice ten). Pressing <Shift> plus a number will toggle that
+voice on or off (so if it is on, then it will turn the voice off;
+otherwise it will turn the voice back on). The <Alt> plus a number key
+combination causes a voice to be turned on (if the voice is already on
+then this has no effect). <Ctrl> plus a number will turn a voice off (so
+if the voice is already off, this will has no effect). When you press
+any of these, you will hear (if the note is playing a note at the time)
+the voice turn on or off and the information bar at the top of the display
+will update to reflect the list of voices that are playing back.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Section ù 5.0.0
+
+Closing Notes:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        MIDI Compozer v1.23 is a product from Apriori Enterprises. It is
+shareware but NOT NOT NOT NOT NOT NOT public domain. All the files
+included are the products of hard work on MY part. Please distribute this
+product but do NOT alter any of the files included. If you wish to include
+this program or any part of it with your own products, you must have the
+permission of the author unless your product is to be shareware. Even
+then, you must include this document unchanged with the product.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Section ù 6.0.0
+
+Words from the Author (Programmer):
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        If you have any comments, complaints, etc... about the program
+PLEASE feel free to E-Mail me at  - jhumphries69@hotmail.com  - with your
+thoughts. If you have any questions, I'll be happy to answer them. I you
+are interested in any other Apriori Enterprises products, let me know and
+I'll send a catalog of all our products (all are shareware with the
+exception of two crippleware products which you must purchase to get a
+full-fledged working version, and one product which is shareware but can
+be registered for a fee which also gets you source code for the program).
+        Thanks you for your interest in Apriori Enterprises and this
+product, and I hope you enjoy it.
+                                                        Sincerely,
+                                                     Josh Humphries
+                                Software Developer for Apriori Enterprises
+
+NOTE : Neither Apriori Enterprises nor I can personally be held accountable
+for any damage or loss of data associated with or caused by this product.
+This clause states that YOU USE THIS PRODUCT AT YOUR OWN RISK.
